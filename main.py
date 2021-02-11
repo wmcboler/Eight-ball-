@@ -1,5 +1,6 @@
 import random 
 name = input("What is your name? ")
+name_cased = name.title()
 question = input("\nWhat question do you want to ask? ")
 answer = ""
 random_number = random.randint(1,9)
@@ -26,5 +27,5 @@ elif random_number == 9:
 else:
   answer = "Error"
 
-print("\n" + name + " ask: " + question)
-print("\nMagic 8-ball's answer: " + answer)
+print("\n Interesting " + name_cased + ", so your question for the great magic ball is: '" + question + "' ?")
+print("\nMagic 8-ball's never incorrect answer is: " + answer)
